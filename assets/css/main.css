@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	cursor: url('images/sword.png'), auto; /* Apply custom GIF cursor */
+	cursor: url('images/sword.png'), auto; 
 	
 }
 
@@ -95,18 +95,18 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f8f8f8; /* Default background color for light mode */
-		transition: background-color 0.3s ease; /* Smooth transition for background color change */
-		color: #000000; /* Default text color */
+		background: #f8f8f8; 
+		transition: background-color 0.3s ease; 
+		color: #000000; 
 	}
 	
 	body.dark-mode {
-		background: #333333; /* Dark background color for dark mode */
-		color: #ffffff; /* Light text color for dark mode */
+		background: #333333; 
+		color: #ffffff; 
 	}
 	
 	h1, h2, h3, h4, h5, h6 {
-		color: inherit; /* Inherit text color from body */
+		color: inherit; 
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -340,7 +340,7 @@ input, select, textarea {
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
-		cursor: url(images/heart.png), auto; /* Apply custom GIF cursor */
+		cursor: url(images/heart.png), auto; 
 	}
 
 		input[type="submit"].icon,
@@ -1028,26 +1028,26 @@ input, select, textarea {
 	
 	#modeToggle {
 		position: absolute;
-		top: 20px; /* Adjust top position */
-		left: 20px; /* Adjust left position */
-		z-index: 1000; /* Ensure it's above other content */
+		top: 20px; 
+		left: 20px; 
+		z-index: 1000; 
 		background: none;
 		border: none;
 		cursor: pointer;
 		padding: 0;
-		cursor: url('images/moon.png'), auto; /* Apply custom GIF cursor */ 
+		cursor: url('images/moon.png'), auto; 
 	}
 	
 	#modeIcon {
-		width: 32px; /* Adjust icon size as needed */
+		width: 32px; 
 		height: 32px;
-		cursor: url('images/moon.png'), auto; /* Apply custom GIF cursor */ 
+		cursor: url('images/moon.png'), auto; 
 	}
 	
 	#modeToggle img {
-		width: 32px; /* Adjust size as needed */
-		height: 32px; /* Adjust size as needed */
-		cursor: url('images/moon.png'), auto; /* Apply custom GIF cursor */ 
+		width: 32px; 
+		height: 32px; 
+		cursor: url('images/moon.png'), auto; 
 	}
 
 
@@ -3081,8 +3081,6 @@ input, select, textarea {
 
 	}
 
-/* Sections/Article */
-
 section, article {
 	margin-bottom: 3em;
 }
@@ -3108,7 +3106,7 @@ section, article {
 	}
 
 	body.dark-mode .main {
-		padding: 6em 0 4em 0; /* Adjust if needed */
+		padding: 6em 0 4em 0; 
 	}
 	
 	/* Main section style1 for dark mode */
@@ -3119,7 +3117,7 @@ section, article {
 	html {
 		scroll-behavior: smooth;
 	  }
-        /* Style for overlay */
+        
         .overlay {
             display: none;
             position: fixed;
@@ -3131,7 +3129,7 @@ section, article {
             z-index: 999;
             overflow: hidden;
         }
-        /* Style for preview container */
+        
         .preview-container {
             position: fixed;
             top: 50%;
@@ -3143,21 +3141,21 @@ section, article {
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 1000;
-            text-align: bottom; /* Center the content horizontally */
-            overflow: auto; /* Enable scrolling within the preview container if necessary */
+            text-align: bottom; 
+            overflow: auto; 
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-        /* Style for preview image */
+        
         .preview-image {
             max-width: 100%;
-            max-height: 60vh; /* Limit the height of the image to 60% of viewport height */
+            max-height: 60vh; 
             height: auto;
             display: block;
-            margin: 150px auto 0; /* Center horizontally and add 20px top margin */
+            margin: 150px auto 0; 
         }
-        /* Style for closing button */
+        
         .close-btn {
             position: absolute;
             top: 10px;
@@ -3168,12 +3166,8 @@ section, article {
         }
         /* Blur effect on the body */
         body.blur {
-            overflow: hidden; /* Prevent scrolling on body */
+            overflow: hidden; 
         }
-
-/*-- -------------------------- -->
-<---            FAQ             -->
-<--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -3183,7 +3177,6 @@ section, article {
     }
     #faq-350 .cs-container {
         width: 100%;
-        /* changes to 1280px at desktop */
         max-width: 34.375rem;
         margin: auto;
         display: flex;
@@ -3194,13 +3187,11 @@ section, article {
         gap: clamp(2.5rem, 5vw, 3rem);
     }
     #faq-350 .cs-content {
-        /* set text align to left if content needs to be left aligned */
         text-align: left;
         width: 100%;
         max-width: 32.625rem;
         display: flex;
         flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
         align-items: flex-start;
     }
 
@@ -3235,8 +3226,6 @@ section, article {
     }
     #faq-350 .cs-faq-item.active .cs-item-p {
         height: auto;
-        /* 20px - 24px bottom */
-        /* 16px - 24px left & right */
         padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
         opacity: 1;
     }
@@ -3245,7 +3234,6 @@ section, article {
         line-height: 1.2em;
         text-align: left;
         font-weight: bold;
-        /* 16px - 20px */
         padding: clamp(1rem, 1.3vw, 1.25rem);
         border: none;
         background: transparent;
@@ -3273,7 +3261,6 @@ section, article {
         top: 45%;
         right: 1.5rem;
         transform: rotate(45deg);
-        /* animate the transform from the left side of the x axis, and the center of the y */
         transform-origin: left center;
         transition: transform 0.5s;
     }
@@ -3290,7 +3277,6 @@ section, article {
         top: 45%;
         right: 1.3125rem;
         transform: rotate(-45deg);
-        /* animate the transform from the right side of the x axis, and the center of the y */
         transform-origin: right center;
         transition: transform 0.5s;
     }
@@ -3309,21 +3295,16 @@ section, article {
         padding: 0 clamp(1rem, 2vw, 1.5rem);
         opacity: 0;
         color: var(--bodyTextColor);
-        /* clips the text so it doesn't show up */
         overflow: hidden;
         transition:
             opacity 0.3s,
             padding-bottom 0.3s;
     }
     #faq-350 .cs-left {
-        /* scaling entire section down. font-size starts at a min in vw, and stops
-               when that value reaches 1em (16px). Since we want the picture elements to base their
-               font size on the parent and not the root, we use ems for this entire section  */
         font-size: min(2.08vw, 0.791em);
         width: 42.875em;
         height: 42em;
         position: relative;
-        /* flips it horizontally */
         transform: scaleX(-1);
     }
     @keyframes floatAnimation {
@@ -3423,11 +3404,8 @@ section, article {
         gap: 3.25rem;
     }
     #faq-350 .cs-left {
-        /* reset the scale */
         font-size: min(1vw, 1em);
-        /* prevents flexbox from squishing it */
         flex: none;
-        /* sends it to the right in the 2nd position */
         order: 2;
     }
     #faq-350 .cs-title,
@@ -3475,7 +3453,6 @@ section, article {
 }
 
 :root {
-    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     --primary: #ff6a3e;
     --primaryLight: #ffba43;
     --secondary: #c5c38f;
@@ -3483,17 +3460,13 @@ section, article {
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
-    /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
-    /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
 
 *, *:before, *:after {
-    /* prevents padding from affecting height and width */
     box-sizing: border-box;
 }
 .cs-topper {
@@ -3529,16 +3502,11 @@ section, article {
     color: var(--bodyTextColor);
 }
 
-/*-- -------------------------- -->
-<---          Gallery           -->
-<--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #gallery-43 {
         padding: var(--sectionPadding);
         position: relative;
-        /* Prevents overflow from the image going off screen */
         overflow: hidden;
     }
     #gallery-43 .cs-container {
@@ -3552,12 +3520,10 @@ section, article {
         gap: clamp(3rem, 6vw, 4rem);
     }
     #gallery-43 .cs-content {
-        /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
         display: flex;
         flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
         align-items: center;
     }
 
@@ -3582,17 +3548,14 @@ section, article {
         opacity: 1;
     }
     #gallery-43 .cs-item:hover .cs-icon {
-        /* return to original position */
         transform: rotateY(0);
     }
     #gallery-43 .cs-item:hover .cs-h3 {
         opacity: 1;
-        /* Return to original position */
         transform: translateY(0);
     }
     #gallery-43 .cs-item:hover .cs-hover-box-text {
         opacity: 1;
-        /* Return to original position */
         transform: translateY(0);
     }
     #gallery-43 .cs-picture {
@@ -3622,14 +3585,11 @@ section, article {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* Prevents padding from contributing to height & width */
         box-sizing: border-box;
-        /* Sets stage for 3d transform animation */
         perspective: 700px;
         top: 0;
         left: 0;
         z-index: 10;
-        /* prevents mouse from being able to interact with these elements */
         pointer-events: none;
         transition: opacity 0.3s;
     }
@@ -3642,7 +3602,6 @@ section, article {
         border-radius: 50%;
         background-color: #fff;
         outline: 0.5rem solid rgba(255, 255, 255, 0.7);
-        /* Start with the icon box rotated 90deg */
         transform: rotateY(90deg);
         position: relative;
         display: inline-flex;
@@ -3663,7 +3622,6 @@ section, article {
         margin: 0 auto;
         max-width: 16.875rem;
         color: #fff;
-        /* make starting position down 10px and invisible */
         opacity: 0;
         transform: translateY(0.625rem);
         margin-bottom: 0.5rem;
@@ -3679,7 +3637,6 @@ section, article {
         margin: 0 auto;
         max-width: 16.875rem;
         color: #fff;
-        /* make starting position down 10px and invisible */
         opacity: 0;
         transform: translateY(0.625rem);
         transition:
@@ -3716,11 +3673,6 @@ section, article {
     }
 }
 
-                                
-/*-- -------------------------- -->
-<---          Contact           -->
-<--- -------------------------- -*/
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #contact-1388 {
@@ -3744,12 +3696,10 @@ section, article {
         position: relative;
     }
     #contact-1388 .cs-content {
-        /* set text align to left if content needs to be left aligned */
         text-align: left;
         width: 100%;
         display: flex;
         flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
         align-items: flex-start;
     }
 
@@ -3812,7 +3762,6 @@ section, article {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* prevents flexbox from squishing it */
         flex: none;
         transition: transform 0.3s;
     }
@@ -3824,10 +3773,7 @@ section, article {
     #contact-1388 .cs-form {
         width: 100%;
         max-width: 39.375rem;
-        /* 24px - 48px top and bottom */
-        /* 16px - 48px left and right */
         padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
-        /* prevents flexbox from affecting height and width */
         box-sizing: border-box;
         background-color: #fff;
         border-radius: 1rem;
@@ -3866,7 +3812,6 @@ section, article {
         background-color: #f7f7f7;
         border-radius: 0.5rem;
         border: none;
-        /* prevents padding from adding to height and width */
         box-sizing: border-box;
     }
     #contact-1388 .cs-input::placeholder {
@@ -3933,7 +3878,6 @@ section, article {
     }
     #contact-1388 .cs-content {
         width: 47%;
-        /* prevents flexbox from squishing it */
         flex: none;
     }
     #contact-1388 .cs-submit {
