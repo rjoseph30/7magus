@@ -1,8 +1,7 @@
-// script.js
+
 document.getElementById('modeToggle').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode-active');
 });
-// script.js
 const modeToggle = document.getElementById('modeToggle');
 const modeIcon = document.getElementById('modeIcon');
 
@@ -12,10 +11,10 @@ modeToggle.addEventListener('click', function() {
     const currentMode = modeIcon.src.includes('images/darkmode.png') ? 'dark' : 'light';
 
     if (currentMode === 'dark') {
-        modeIcon.src = 'images/lightmode.png'; // Change to light mode icon
+        modeIcon.src = 'images/lightmode.png'; 
         modeIcon.alt = 'Toggle Light Mode';
     } else {
-        modeIcon.src = 'images/darkmode.png'; // Change back to dark mode icon
+        modeIcon.src = 'images/darkmode.png'; 
         modeIcon.alt = 'Toggle Dark Mode';
     }
 });
@@ -34,20 +33,15 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function openPreview(imageSrc) {
-    // Show the overlay
     document.getElementById('overlay').style.display = 'block';
-    // Set the preview image source
     document.getElementById('preview-image').src = imageSrc;
-    // Add a class to prevent scrolling
     document.body.classList.add('no-scroll');
 }
 
 function closePreview() {
-    // Hide the overlay
+
     document.getElementById('overlay').style.display = 'none';
-    // Clear the preview image source
     document.getElementById('preview-image').src = '';
-    // Remove the class to allow scrolling
     document.body.classList.remove('no-scroll');
 }
 
@@ -58,20 +52,12 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
         }
         item.addEventListener('click', onClick)
         }
-                                
-
-/*
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 (function($) {
 
 	var	$window = $(window),
 		$body = $('body');
 
-	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
 			large:    [ '981px',   '1280px' ],
@@ -81,21 +67,17 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
 			xxsmall:  [ null,      '360px'  ]
 		});
 
-	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
 		});
 
-	// Touch?
 		if (browser.mobile)
 			$body.addClass('is-touch');
 
-	// Forms.
 		var $form = $('form');
 
-		// Auto-resizing textareas.
 			$form.find('textarea').each(function() {
 
 				var $this = $(this),
@@ -142,7 +124,6 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
 					})
 					.triggerHandler('--init');
 
-				// Fix.
 					if (browser.name == 'ie'
 					||	browser.mobile)
 						$this
@@ -151,7 +132,6 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
 
 			});
 
-	// Menu.
 		var $menu = $('#menu');
 
 		$menu.wrapInner('<div class="inner"></div>');
@@ -206,10 +186,8 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
 				event.preventDefault();
 				event.stopPropagation();
 
-				// Hide.
 					$menu._hide();
 
-				// Redirect.
 					if (href == '#menu')
 						return;
 
@@ -226,19 +204,16 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
 				event.stopPropagation();
 				event.preventDefault();
 
-				// Toggle.
 					$menu._toggle();
 
 			})
 			.on('click', function(event) {
 
-				// Hide.
 					$menu._hide();
 
 			})
 			.on('keydown', function(event) {
 
-				// Hide on escape.
 					if (event.keyCode == 27)
 						$menu._hide();
 
@@ -246,12 +221,10 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
 
 
 			document.getElementById("cs-form-1388").addEventListener("submit", function(event) {
-				event.preventDefault(); // Prevent the form from submitting
+				event.preventDefault(); 
 	
-				// Get form data
 				var formData = new FormData(this);
 	
-				// Send form data via Formspree
 				fetch("https://formspree.io/f/xpzvgqgd", {
 					method: "POST",
 					body: formData,
@@ -262,8 +235,6 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
 				.then(function(response) {
 					if (response.ok) {
 						alert("Message sent successfully!");
-						// Optionally, you can redirect the user to a thank you page
-						// window.location.href = "thank-you.html";
 					} else {
 						throw new Error("Form submission failed.");
 					}
