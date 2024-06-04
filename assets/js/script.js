@@ -32,9 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-function openPreview(imageSrc) {
+function openPreview(imageSrc, infoText) {
     document.getElementById('overlay').style.display = 'block';
     document.getElementById('preview-image').src = imageSrc;
+    document.getElementById('info-text').innerHTML = infoText; // Update info text
     document.body.classList.add('no-scroll');
 }
 
@@ -244,6 +245,8 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
 					console.error(error);
 				});
 			});
+
+
 
 })(jQuery);
 

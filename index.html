@@ -9,9 +9,8 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
-
 		<!-- Header -->
+        
 			<header id="header">
                 <button id="modeToggle">
                     <img id="modeIcon" src="images/darkmode.png" alt="Toggle Dark Mode">
@@ -112,7 +111,7 @@
                                     </span>
                                 </button>
                                 <p class="cs-item-p">
-                                    <b>@Sean Wilton Rodriguez</b> (App Co-developer) 
+                                    <b><a href=" https://www.facebook.com/seanwilton.rodriguez">@Sean Wilton Rodriguez</a></b> (App Co-developer) 
                                 </p>
                             </li>
                         </ul>
@@ -128,12 +127,17 @@
                 My portfolio showcases my skill in developing standout websites and crafting attention-grabbing posters. With a dedication to detail and a flair for creativity, I bring designs to life that not only look great but also effectively convey messages. From sleek digital interfaces to vibrant print materials, I specialize in delivering visually compelling solutions that resonate with audiences.
             </p>
         </div>
+        <div class="overlay" id="overlay" onclick="closePreview()">
+            <span class="close-btn" onclick="closePreview()">&times;</span>
+            <img src="" class="preview-image" id="preview-image" alt="Preview Image">
+            <div class="info-text" id="info-text"></div> <!-- Add this line for info text -->
+        </div>
         <div class="cs-image-group">
-            <a class="cs-item" href="#one">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/shibuya.jpg" >
                     <source media="(min-width: 601px)" srcset="images/shibuya.jpg">
-                    <img loading="lazy" decoding="async" src="images/shibuya.jpg" alt="fancy house" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/shibuya.jpg', 'A midterm project for our Web Developing 1 course, focusing on the culture of Japan, specifically Shibuya. The website offers a brief tour highlighting their culture, notable places, and activities in the city.')" alt="fancy house" width="346" height="346">
                 </picture>
                 <div class="cs-hover-box">
                     <picture class="cs-icon">
@@ -145,11 +149,11 @@
                     </p>
                 </div>
             </a>
-            <a class="cs-item" href="#five">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/lpmaker1.png">
                     <source media="(min-width: 601px)" srcset="images/lpmaker1.png">
-                    <img loading="lazy" decoding="async" src="images/lpmaker1.png" alt="modern house" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/lpmaker1.png', 'Our collaboration on the development of Lesson Plan Maker marked a significant milestone in our journey through Structured Programming 1. This app, is both my design concepts and Sean Wilton Rodriguez s programming expertise, represents the culmination of our efforts in the subject.')" alt="fancy house" width="346" height="346">
                 </picture>
                 <div class="cs-hover-box">
                     <picture class="cs-icon">
@@ -162,11 +166,11 @@
                 </div>
             </a>
 
-            <a class="cs-item" href="#nine">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/dog.jpeg">
                     <source media="(min-width: 601px)" srcset="images/dog.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/dog.jpeg" alt="modern home at night" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/dog.jpeg', 'A social awareness poster addressing animal cruelty in our country highlights the plight of neglected stray animals and those subjected to abuse for entertainment or without justification. The message underscores the importance of treating animals with compassion and equality.')" alt="fancy house" width="346" height="346">
                 </picture>
                 <div class="cs-hover-box">
                     <picture class="cs-icon">
@@ -178,11 +182,11 @@
                     </p>
                 </div>
             </a>
-            <a class="cs-item" href="#two">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/aboutmepage.png">
                     <source media="(min-width: 601px)" srcset="images/aboutmepage.png">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/aboutmepage.png" alt="modern home" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/aboutmepage.png', 'This is a personal website aimed at providing insights into my life and interests. It serves as a Long test for our Web Development 2 course, showcasing a fully functional design that adapts seamlessly across different devices (responsive design). One of its key features is its integration with a Django database, allowing for dynamic content management and interactive user experiences.')" alt="fancy house" width="346" height="346">
                 </picture>
  
                 <div class="cs-hover-box">
@@ -195,11 +199,11 @@
                     </p>
                 </div>
             </a>
-            <a class="cs-item" href="#six">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/lpmaker2.png">
                     <source media="(min-width: 601px)" srcset="images/lpmaker2.png">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/lpmaker2.png" alt="appliance" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/lpmaker2.png', 'Designed and developed by Sean Wilton Rodriguez and me, Robert Joseph Eusebio, we are now working to enhance it further for our Structured Programming 2 course with Dazle Salvedia and Julieanne Castro.')" alt="fancy house" width="346" height="346">
                 </picture>
 
                 <div class="cs-hover-box">
@@ -212,11 +216,11 @@
                     </p>
                 </div>
             </a>
-            <a class="cs-item" href="#ten">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/bright.jpeg">
                     <source media="(min-width: 601px)" srcset="images/bright.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="images/bright.jpeg" alt="modern home" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/bright.jpeg', 'The movie delves into themes of mental health, grief, loss, and the profound impact of human connection. It portrays the intricate emotions of adolescence and how trauma shapes young lives. All the Bright Places is celebrated for its sensitive depiction of mental illness and has received acclaim for the performances of its lead actors and its heartfelt narrative.')" alt="fancy house" width="346" height="346">
                 </picture>
 
                 <div class="cs-hover-box">
@@ -229,11 +233,11 @@
                     </p>
                 </div>
             </a>
-            <a class="cs-item" href="#three">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/prog2finalweb.jpg">
                     <source media="(min-width: 601px)" srcset="images/prog2finalweb.jpg">
-                    <img loading="lazy" decoding="async" src="images/prog2finalweb.jpg" alt="test" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/prog2finalweb.jpg', 'The website I created for my final project in Web Development 1 focuses on Structured Programming 1. It provides learning materials and units essential for the course, serving as a tutorial to help students grasp the subject better.')" alt="fancy house" width="346" height="346">
                 </picture>
 
                 <div class="cs-hover-box">
@@ -246,11 +250,11 @@
                     </p>
                 </div>
             </a>
-            <a class="cs-item" href="#seven">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/flowchart.png">
                     <source media="(min-width: 601px)" srcset="images/flowchart.png">
-                    <img loading="lazy" decoding="async" src="images/flowchart.png" alt="fancy house" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/flowchart.png', 'Proficient in crafting flowcharts, particularly for applications featuring multiple modules and diverse functionalities. An instance of this expertise can be observed in our application Lesson Plan Maker, specifically in Module 1, which encompasses the main menu user interface.')" alt="fancy house" width="346" height="346">
                 </picture>
 
                 <div class="cs-hover-box">
@@ -263,11 +267,11 @@
                     </p>
                 </div>
             </a>
-            <a class="cs-item" href="#eleven">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/videogames.jpeg">
                     <source media="(min-width: 601px)" srcset="images/videogames.jpeg">
-                    <img loading="lazy" decoding="async" src="images/videogames.jpeg" alt="fancy house" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/videogames.jpeg', 'Back during my senior high school days, I created a blog post discussing the positive impact of video games on our well-being. While the prevailing notion often associates video games with addiction and negative effects on mental health, I argued that they can actually be beneficial. In my opinion, video games serve as a means to alleviate stress, providing a temporary escape from life s challenges. Additionally, I highlighted how gaming can enhance critical thinking and strategic skills, offering a space for relaxation and enjoyment.')" alt="fancy house" width="346" height="346">
                 </picture>
 
                 <div class="cs-hover-box">
@@ -280,11 +284,11 @@
                     </p>
                 </div>
             </a>
-            <a class="cs-item" href="#four">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/googlesite.png">
                     <source media="(min-width: 601px)" srcset="images/googlesite.png">
-                    <img loading="lazy" decoding="async" src="images/googlesite.png" alt="fancy house" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/googlesite.png', 'My expertise lies at an intermediate level when it comes to navigating Google Sites, facilitating the creation of interactive designs. For instance, I ve utilized this proficiency to develop a basic About Me page tailored for our ICT1 subject. Furthermore, this page doubles as a portfolio, showcasing the skills and knowledge acquired throughout the course.')" alt="fancy house" width="346" height="346">
                 </picture>
                 <div class="cs-hover-box">
                     <picture class="cs-icon">
@@ -296,11 +300,11 @@
                     </p>
                 </div>
             </a>
-            <a class="cs-item" href="#eight">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/ppt.png">
                     <source media="(min-width: 601px)" srcset="images/ppt.png">
-                    <img loading="lazy" decoding="async" src="images/ppt.png" alt="fancy house" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/ppt.png', 'I possess the ability to design engaging user interfaces, even within PowerPoint presentations and other graphical formats. An instance of this skill was showcased during our presentation for Web Developing 1, where I drew inspiration from the poster of the Netflix series Start Up.')" alt="fancy house" width="346" height="346">
                 </picture>
                 <div class="cs-hover-box">
                     <picture class="cs-icon">
@@ -312,11 +316,11 @@
                     </p>
                 </div>
             </a>
-            <a class="cs-item" href="#twelve">
+            <a class="cs-item">
                 <picture class="cs-picture">
                     <source media="(max-width: 600px)" srcset="images/greekgod.png">
                     <source media="(min-width: 601px)" srcset="images/greekgod.png">
-                    <img loading="lazy" decoding="async" src="images/greekgod.png" alt="fancy house" width="346" height="346">
+                    <img loading="lazy" decoding="async" onclick="openPreview('images/greekgod.png', 'For our Arts Appreciation class, I undertook a magazine design project with a contemporary twist inspired by Greek mythology. This assignment was a recurring weekly task, and I m proud to mention that my work secured the top spot in the Male category.')" alt="fancy house" width="346" height="346">
                 </picture>
                 <div class="cs-hover-box">
                     <picture class="cs-icon">
@@ -332,254 +336,8 @@
         </div>
     </div>
 </section>
-                        
-
-<section id="gallery-43">
-    <div class="cs-container">
-        <div class="cs-content">
-            <h1 class="cs-title">Web Developing</h1>
-        </section>
-                <div class="overlay" id="overlay" onclick="closePreview()">
-                    <span class="close-btn" onclick="closePreview()">&times;</span>
-                    <img src="" class="preview-image" id="preview-image" alt="Preview Image">
-                </div>      
-                <section id="one" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Cultural Website: <br>Shibuya</h2>
-                                </header>
-                                <p>A midterm project for our Web Developing 1 course, focusing on the culture of Japan, specifically Shibuya. The website offers a brief tour highlighting their culture, notable places, and activities in the city.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/shibuya.jpg" alt="Shibuya Image" onclick="openPreview('images/shibuya.jpg')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="two" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>About Me Page</h2>
-                                </header>
-                                <p>This is a personal website aimed at providing insights into my life and interests. It serves as a Long test for our Web Development 2 course, showcasing a fully functional design that adapts seamlessly across different devices (responsive design). One of its key features is its integration with a Django database, allowing for dynamic content management and interactive user experiences.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/aboutmepage.png" alt="aboutme" onclick="openPreview('images/aboutmepage.png')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="three" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Learning Website Material: <br>Structured Programming 1</h2>
-                                </header>
-                                <p>The website I created for my final project in Web Development 1 focuses on Structured Programming 1. It provides learning materials and units essential for the course, serving as a tutorial to help students grasp the subject better.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/prog2finalweb.jpg" alt="prog2final" onclick="openPreview('images/prog2finalweb.jpg')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="four" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Google Site</h2>
-                                </header>
-                                <p>My expertise lies at an intermediate level when it comes to navigating Google Sites, facilitating the creation of interactive designs. For instance, I've utilized this proficiency to develop a basic "About Me" page tailored for our ICT1 subject. Furthermore, this page doubles as a portfolio, showcasing the skills and knowledge acquired throughout the course.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/googlesite.png" alt="prog2final" onclick="openPreview('images/googlesite.png')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="gallery-43">
-                    <div class="cs-container">
-                        <div class="cs-content">
-                            <h1 class="cs-title">User Interface and Flow</h1>
-                        </section>
-
-                <section id="five" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Lesson Plan Maker V1</h2>
-                                </header>
-                                <p>Our collaboration on the development of Lesson Plan Maker marked a significant milestone in our journey through Structured Programming 1. This app, is both my design concepts and Sean Wilton Rodriguez's programming expertise, represents the culmination of our efforts in the subject.</p>
-                                <p>Designed with the user experience in mind, Lesson Plan Maker boasts an intuitive interface that prioritizes simplicity and accessibility. Its primary aim is to streamline the lesson planning process for educators, particularly those within the academic context of Technological University of the Philippines Cavite.</p>
-                                <p>Through the app, users are empowered to effortlessly input the necessary details for crafting lesson plans. By following a user-friendly format, educators can efficiently generate semi-detailed plans that are not only comprehensive but also catered to the needs of students within the institution.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/lpmaker1.png" alt="LP maker 1" onclick="openPreview('images/lpmaker1.png')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
 
-                <section id="six" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Lesson Plan Maker V2</h2>
-                                </header>
-                                <p>This final project for our Structured Programming 1 course, the Lesson Plan Maker, is a useful tool created to simplify the process of crafting lesson plans. Users can easily generate a ready-to-use template tailored for our university by filling in the input boxes provided by the app.</p>
-                                <p>Designed and developed by Sean Wilton Rodriguez and me, Robert Joseph Eusebio, we are now working to enhance it further for our Structured Programming 2 course with Dazle Salvedia and Julieanne Castro.</p>
-                                <p>This app aims to assist both pre-service and current teachers by making their work easier, even without internet access, as the app is available offline. It seeks to transform traditional teaching methods into a more efficient process.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/lpmaker2.png" alt="lpmaker" onclick="openPreview('images/lpmaker2.png')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="seven" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Flowchart Creation</h2>
-                                </header>
-                                <p>Proficient in crafting flowcharts, particularly for applications featuring multiple modules and diverse functionalities. An instance of this expertise can be observed in our application "Lesson Plan Maker," specifically in Module 1, which encompasses the main menu user interface.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/flowchart.png" alt="prog2final" onclick="openPreview('images/flowchart.png')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="eight" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Powerpoint Presentation</h2>
-                                </header>
-                                <p>I possess the ability to design engaging user interfaces, even within PowerPoint presentations and other graphical formats. An instance of this skill was showcased during our presentation for Web Developing 1, where I drew inspiration from the poster of the Netflix series "Start Up".</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/ppt.png" alt="aboutme" onclick="openPreview('images/ppt.png')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="gallery-43">
-                    <div class="cs-container">
-                        <div class="cs-content">
-                            <h1 class="cs-title">Poster and Creative Designs</h1>
-                        </section>
-
-                <section id="nine" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Social Awareness Poster: <br>Animal Cruelty</h2>
-                                </header>
-                                <p>A social awareness poster addressing animal cruelty in our country highlights the plight of neglected stray animals and those subjected to abuse for entertainment or without justification. The message underscores the importance of treating animals with compassion and equality.</p>
-                                <p>The poster features poignant images of suffering animals, symbolizing their lack of voice. As responsible members of society, we are urged to take action and advocate for these vulnerable animals, giving them the support they deserve.</p>
-                                <p>As members of society, we have a moral responsibility to intervene and advocate for these vulnerable animals. This involves not only raising awareness but also actively supporting organizations and initiatives dedicated to animal welfare. By fostering a culture of empathy and education, we can encourage responsible pet ownership, promote adoption over buying pets, and advocate for stronger laws against animal cruelty.</p>
-                                <p>This poster was created using Canva as part of a weekly project for our GEC6 Arts Appreciation course.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                <img src="images/dog.jpeg" alt="dog" onclick="openPreview('images/dog.jpeg')" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="ten" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Movie Poster: <br>All The Bright Places</h2>
-                                </header>
-                                <p>A newly designed movie poster features "All the Bright Places," directed by Brett Haley and starring Justice Smith and Elle Fanning. The film revolves around two troubled teenagers facing different challenges. They meet on the ledge of their school's bell tower, where Finch intervenes as Violet contemplates jumping off the bridge. As their friendship grows, Finch encourages Violet to step beyond her comfort zone, while Violet supports Finch in confronting the voices in his mind. Together, they embark on a journey of self-discovery and healing, exploring both the beauty and pain of life.</p>
-                                <p>The movie delves into themes of mental health, grief, loss, and the profound impact of human connection. It portrays the intricate emotions of adolescence and how trauma shapes young lives. "All the Bright Places" is celebrated for its sensitive depiction of mental illness and has received acclaim for the performances of its lead actors and its heartfelt narrative.</p>
-                                <p>This poster was created using Canva as part of a weekly project for our GEC6 Arts Appreciation course.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/bright.jpeg" alt="movieposter" onclick="openPreview('images/bright.jpeg')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="eleven" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Blog post: Videogame</h2>
-                                </header>
-                                <p>Back during my senior high school days, I created a blog post discussing the positive impact of video games on our well-being. While the prevailing notion often associates video games with addiction and negative effects on mental health, I argued that they can actually be beneficial. In my opinion, video games serve as a means to alleviate stress, providing a temporary escape from life's challenges. Additionally, I highlighted how gaming can enhance critical thinking and strategic skills, offering a space for relaxation and enjoyment.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/videogames.jpeg" alt="movieposter" onclick="openPreview('images/videogames.jpeg')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="twelve" class="main style1">
-                    <div class="container">
-                        <div class="row gtr-150">
-                            <div class="col-6 col-12-medium">
-                                <header class="major">
-                                    <h2>Magazine: Dionysus</h2>
-                                </header>
-                                <p>For our Arts Appreciation class, I undertook a magazine design project with a contemporary twist inspired by Greek mythology. This assignment was a recurring weekly task, and I'm proud to mention that my work secured the top spot in the Male category.</p>
-                                <p>My design drew inspiration from Dionysus, the Greek god associated with wine and pleasure. Like the rest of the Twelve Olympians, Dionysus possessed immortality and formidable powers. Notably, he had the ability to produce wine and stimulate the growth of vines. Additionally, he could shapeshift into various animals such as bulls or lions. Among his unique abilities was the capacity to drive mortals into states of madness.</p>
-                            </div>
-                            <div class="col-6 col-12-medium imp-medium">
-                                <span class="image fit">
-                                    <img src="images/greekgod.png" alt="movieposter" onclick="openPreview('images/greekgod.png')" />
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
 <section id="contact-1388">
     <div class="cs-container">
